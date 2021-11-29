@@ -1,0 +1,51 @@
+.button:hover{
+
+
+    -fx-text-fill: red;
+    -fx-background-color: black;
+    /*    -fx-text-fill: black;*/
+}
+
+
+.round{
+    -fx-background-color: transparent;
+    -fx-background-radius: 30;
+    -fx-border-color: whitesmoke;
+    -fx-border-radius: 30;
+}
+
+.transparent{
+    -fx-background-color: transparent;
+    -fx-text-fill:  whitesmoke;
+}
+
+
+.selektovanTf:focused {
+    -fx-border-width: 0 0 0 2;
+    -fx-border-color:#990000; 
+    -fx-text-fill: #990000;
+}
+
+
+.dpF:focused {
+     -fx-border-width: 0 0 0 2;
+    -fx-border-color:#990000; 
+    -fx-text-fill: #990000;
+    -fx-background-color: transparent;
+
+}
+
+.hoverRB:hover{
+     -fx-border-width: 0 0 0 2;
+    -fx-border-color:#990000; 
+}
+.comboBox:focused{
+    -fx-border-width: 0 0 0 2;
+    -fx-border-color:#990000; 
+    -fx-text-fill: #990000;
+
+}
+
+.hoverButton:hover{
+    -fx-border-color:#990000; 
+}

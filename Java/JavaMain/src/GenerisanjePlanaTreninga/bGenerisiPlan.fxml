@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1168.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GenerisanjePlanaTreninga.cGenerisiPlan">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tClan" prefHeight="65.0" prefWidth="1168.0">
+              <columns>
+                <TableColumn fx:id="cID" prefWidth="35.0" text="ID" />
+                <TableColumn fx:id="cJMBG" prefWidth="123.0" text="JMBG" />
+                  <TableColumn fx:id="cIme" prefWidth="70.0" text="Ime" />
+                  <TableColumn fx:id="cPrezime" prefWidth="71.0" text="Prezime" />
+                  <TableColumn fx:id="cDatRodjenja" prefWidth="111.0" text="Datum rodjenja" />
+                  <TableColumn fx:id="cVisina" prefWidth="61.0" text="Visina" />
+                  <TableColumn fx:id="cTelesnaTezina" prefWidth="91.0" text="Telesna tezina" />
+                  <TableColumn fx:id="cPol" prefWidth="48.0" text="Pol" />
+                  <TableColumn fx:id="cPlanFA" prefWidth="182.0" text="Plan Fizicke aktivnosti" />
+                  <TableColumn fx:id="cBMI" prefWidth="48.0" text="BMI" />
+                  <TableColumn fx:id="cStatusZdravlja" prefWidth="107.0" text="Status zdravlja" />
+                  <TableColumn fx:id="cBrojTelefona" prefWidth="83.0" text="Broj telefona" />
+                  <TableColumn fx:id="cDatumUclanjenja" prefWidth="159.0" text="Datum uclanjenja" />
+              </columns>
+            </TableView>
+         </children></HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../logo/logoAplikacija.jpg" />
+               </image>
+            </ImageView>
+            <Label textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <content>
+                  <GridPane fx:id="gridVezbi">
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children></VBox>
+   </center>
+</BorderPane>
